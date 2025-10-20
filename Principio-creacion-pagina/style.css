@@ -1,0 +1,15 @@
+body{
+    margin:0;
+}
+.alinear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera{
+    background-color: rgb(30, 30, 199);
+    max-height: 100px;
+    padding: 10px 15px;
+}
+.img_header{width: 50px;}
+a{color: black;}
