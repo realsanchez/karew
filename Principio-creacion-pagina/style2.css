@@ -1,106 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(../Principio-creacion-pagina/img/Cancha-NBA.jpg); /* Cambia la ruta si es necesario */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    color: #fff;
+  background-color: #121212; 
+  color: #e0e0e0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Cabecera */
-.cabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: rgba(0, 0, 0, 0.6);
+
+.form-header {
+  background-color: #1f1f1f;
+  padding: 20px 40px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 500px;
 }
 
-.img_header {
-    height: 50px;
-    margin-right: 10px;
+.form-title {
+  color: #3a75c4; 
+  font-size: 28px;
+  text-align: center;
 }
 
-.a a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+
+.formulario-inscripcion {
+  background-color: #1a1a1a;
+  padding: 30px 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.a a:hover {
-    text-decoration: underline;
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-button {
-    padding: 8px 16px;
-    background-color: #2196f3;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #cccccc;
 }
 
-button:hover {
-    background-color: #1976d2;
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Sección cabecera */
-.header-new {
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
+.form-group input:focus {
+  outline: none;
+  border-color: #3a75c4;
+  background-color: #2e2e2e;
 }
 
-.boton h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+
+.form-submit {
+  background-color: #3a75c4;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
-.edit {
-    background-color: #4caf50;
-}
-
-.edit:hover {
-    background-color: #388e3c;
-}
-
-/* Servicios */
-.servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.service_box {
-    background-color: rgba(255, 255, 255, 0.1);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    color: #fff;
-}
-
-.img_box {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.img_ins {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.caja_texto h2 {
-    margin: 0 0 10px 0;
-}
-
-.parrafo p {
-    font-size: 0.95em;
-    line-height: 1.4em;
+.form-submit:hover {
+  background-color: #2f5a8b;
 }

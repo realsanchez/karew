@@ -7,12 +7,20 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f6e7e7;
     color: #333;
     line-height: 1.6;
 }
 
 /* Cabecera */
+.cabecera {
+    background-color: #001f3f; /* Azul marino */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .alinear {
     display: flex;
     justify-content: space-between;
@@ -57,6 +65,7 @@ button {
 button:hover {
     background-color: #e6b800;
 }
+
 
 /* Segundo Header */
 .header-new {
@@ -145,56 +154,233 @@ button:hover {
     }
 }
 
-        /* Centrado de la sección */
-        .form_section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
+    .form_section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
 
-        /* Caja del formulario */
-        .form_box {
-            background-color: #1c1818;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-            width: 100%;
-            max-width: 400px;
-        }
+    .form_box {
+      background: rgba(30, 30, 30, 0.9);
+      backdrop-filter: blur(8px);
+      box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.6),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      max-width: 400px;
+      width: 100%;
+    }
 
-        /* Centrado del formulario */
-        .formClass {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+    .formClass {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-        /* Estilo de los inputs */
-        .form_input {
-            background-color: #6346b3;
-            border: 1px solid #000000;
-            padding: 12px;
-            border-radius: 6px;
-            color: #fff;
-            font-size: 16px;
-            transition: border 0.3s ease;
-        }
+    .form_input {
+      background: #1c1c1c;
+      border: 1px solid #333;
+      padding: 12px 16px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
+    }
 
-        .form_input:focus {
-            border-color: #00bcd4;
-            outline: none;
-        }
+    .form_input::placeholder {
+      color: #888;
+    }
 
-        /* Botón de envío */
-        .form_input[type="submit"] {
-            background-color: #00bcd4;
-            border: none;
-            color: #000;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    .form_input:focus {
+      outline: none;
+      border-color: #00bcd4;
+      box-shadow:
+        0 0 0 2px rgba(0, 188, 212, 0.4),
+        inset 0 1px 3px rgba(0, 0, 0, 0.6);
+      background-color: #262626;
+    }
 
-        .form_input[type="submit"]:hover {
-            background-color: #0097a7;
+    .form_input[type="submit"] {
+      background: linear-gradient(to right, #00bcd4, #0097a7);
+      color: #000;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+    }
+
+    .form_input[type="submit"]:hover {
+      background: linear-gradient(to right, #0097a7, #00bcd4);
+      transform: translateY(-1px);
+    }
+
+    .form_input[type="submit"]:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0, 188, 212, 0.3);
+    }
+
+    
+/* Contenedor principal centrado vertical y horizontalmente */
+.list_section.header_center {
+  display: flex;
+    padding: 40px 0;
+}
+
+/* Caja de la lista con fondo azul y contenido alineado a la izquierda */
+.list_box.header_center {
+    background-color: #0a2342; /* azul oscuro serio */
+    border: 1px solid #1c3d63;
+    border-radius: 8px;
+    padding: 30px 40px;
+    max-width: 400px;
+    text-align: left; /* Alineación a la izquierda */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Título */
+.list_box.header_center h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 1px solid #1c3d63;
+    padding-bottom: 10px;
+}
+
+/* Lista */
+.list_class {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista */
+.list_class li {
+    padding: 12px 0;
+    border-bottom: 1px solid #16395a;
+    color: #cbd5e1;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.list_class li:last-child {
+    border-bottom: none;
+}
+
+/* Hover */
+.list_class li:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+}
+
+tr:nth-child(even) {
+    background-color: #2c2c2c;
+}
+
+tr:hover {
+    background-color: #444;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .cabecera, .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_box {
+        flex-direction: column;
+    }
+
+    .img_box img {
+        width: 100%;
+    }
+}
+footer {
+  background-color: #1a1a1a; /* Fondo oscuro */
+  color: #e0e0e0; /* Texto gris claro */
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor del footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* Secciones individuales */
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  font-size: 15px;
+  color: #c0c0c0;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Lista de enlaces */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #888;
+}
