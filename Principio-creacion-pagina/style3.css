@@ -1,0 +1,200 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+.alinear {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1c1c1c;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.img_header {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.a {
+    display: flex;
+    gap: 15px;
+}
+
+.a a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.a a:hover {
+    color: #ffcc00;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Segundo Header */
+.header-new {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.boton h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.edit {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Sección de servicios */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.service_box {
+    background-color: #fafafa;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service_box:hover {
+    transform: translateY(-5px);
+}
+
+.img_box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img_ins {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja_texto {
+    padding: 20px;
+}
+
+.caja_texto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.parrafo p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .alinear {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_box {
+        width: 90%;
+    }
+}
+
+        /* Centrado de la sección */
+        .form_section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Caja del formulario */
+        .form_box {
+            background-color: #1c1818;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Centrado del formulario */
+        .formClass {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Estilo de los inputs */
+        .form_input {
+            background-color: #6346b3;
+            border: 1px solid #000000;
+            padding: 12px;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 16px;
+            transition: border 0.3s ease;
+        }
+
+        .form_input:focus {
+            border-color: #00bcd4;
+            outline: none;
+        }
+
+        /* Botón de envío */
+        .form_input[type="submit"] {
+            background-color: #00bcd4;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form_input[type="submit"]:hover {
+            background-color: #0097a7;
