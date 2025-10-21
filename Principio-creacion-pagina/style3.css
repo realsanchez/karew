@@ -384,3 +384,10 @@ footer {
   font-size: 14px;
   color: #888;
 }
+
+@media only screen and (max-width: 720px) {
+
+  .header_center{
+    flex-direction: column;
+  }
+}
