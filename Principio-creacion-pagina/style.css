@@ -1,15 +1,73 @@
-body{
+body{height: 100%;
     margin:0;
+    background-color: rgb(255, 255, 255);
 }
 .alinear{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5px;
 }
 .cabecera{
     background-color: rgb(30, 30, 199);
     max-height: 100px;
-    padding: 10px 15px;
+    padding: 10px 10px;
+    margin: 0;
+    overflow: hidden;
 }
 .img_header{width: 50px;}
-a{color: black;}
+a{color: rgb(243, 241, 241);
+font-weight: bolder;
+text-decoration: none;
+margin: 5px;}
+
+a:hover{text-decoration: underline;}
+button{
+    border-radius:10px;}
+.header{background:url(../Principio-creacion-pagina/img/Cancha-NBA.jpg) no-repeat;
+ background-size: cover;
+ height: 100vh;
+ background-attachment: fixed;
+ background-position: center;
+ width: 1;
+}
+.header-new{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+h1{margin: 0; color: aliceblue;}
+.boton{
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    width: 300px;
+    border-radius: 20px;
+}
+.edit{color: rgb(106, 30, 177);
+background-color: rgb(27, 9, 9);}
+.service_box{
+    width: 200px;
+    height: 500px;
+    background-color: beige;
+    margin: 20px;
+    display: block;
+    
+}
+.img_ins{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.parrafo{
+    word-wrap: break-word;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+.caja_texto{ padding: 10px;}
+
+/* --:root(palabra reservada para declarar variable en CSS), para declararla : var(--nombredevariable):un valor
+
+
+

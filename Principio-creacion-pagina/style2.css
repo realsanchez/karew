@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../Principio-creacion-pagina/img/Cancha-NBA.jpg); /* Cambia la ruta si es necesario */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+
+/* Cabecera */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img_header {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.a a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.a a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #2196f3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+/* Sección cabecera */
+.header-new {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.boton h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.edit {
+    background-color: #4caf50;
+}
+
+.edit:hover {
+    background-color: #388e3c;
+}
+
+/* Servicios */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.service_box {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.img_box {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.img_ins {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.caja_texto h2 {
+    margin: 0 0 10px 0;
+}
+
+.parrafo p {
+    font-size: 0.95em;
+    line-height: 1.4em;
+}
