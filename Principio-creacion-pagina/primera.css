@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117; /* Azul oscuro */
+    color: #e0e0e0; /* Gris claro para buen contraste */
+}
+
+a {
+    color: #58a6ff; /* Azul claro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700; /* Amarillo brillante */
+}
+
+/* ======== Cabecera ======== */
+.alinear.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161b22;
+    padding: 10px 20px;
+    border-bottom: 2px solid #30363d;
+}
+
+.img_header {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.alinear.cabecera .a a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* ======== Botón login ======== */
+button {
+    background-color: #238636;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+/* ======== Sección cabecera 2 ======== */
+.header.header-new {
+    background-color: #1a1f2c;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #30363d;
+}
+
+.header.header-new h1 {
+    margin: 0;
+    color: #58a6ff;
+}
+
+.edit {
+    margin-top: 10px;
+    background-color: #1f6feb;
+}
+
+/* ======== Servicios ======== */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #0d1117;
+}
+
+.service_box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.service_box:hover {
+    transform: scale(1.02);
+}
+
+.img_box {
+    width: 100%;
+    background-color: #0d1117;
+}
+
+.img_ins {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caja_texto {
+    padding: 15px;
+}
+
+.caja_texto h2 {
+    margin: 0 0 10px;
+    color: #58a6ff;
+}
+
+.parrafo p {
+    line-height: 1.5;
+    color: #c9d1d9;
+}
+
+/* ======== Responsive ======== */
+@media screen and (max-width: 768px) {
+    .alinear.cabecera {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+    a:hover {
+    color: #ff4800; /* Amarillo brillante */
+}
+nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: left;
+        margin: 8px 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    nav a:hover {
+        background-color: #ffeb3b;
+        color: #0d47a1;
+    }
+}
+
+form {
+    background-color: #101820;
+    color: #e0e0e0;
+    border: 1px solid #1f3b50;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 119, 255, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #7da6d9;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #1a2a3a;
+    color: #ffffff;
+    border: 1px solid #334d6e;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #ffeb3b;
+    outline: none;
+}
+
+form button,
+form input[type="submit"] {
+    background-color: #0d47a1;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #ffeb3b;
+    color: #0d47a1;
+}
+
+/* ========== LISTAS ========== */
+ul,
+ol {
+    background-color: #101820;
+    padding: 20px;
+    border: 1px solid #1f3b50;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 30px auto;
+    color: #cfd8dc;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border-left: 4px solid #0d47a1;
+    transition: border-left-color 0.3s;
+}
+
+ul li:hover,
+ol li:hover {
+    border-left-color: #ffeb3b;
+    color: #ffeb3b;
+}
+
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #101820;
+    color: #e0e0e0;
+    border: 1px solid #1f3b50;
+    box-shadow: 0 0 10px rgba(0, 119, 255, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0d47a1;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #1f3b50;
+}
+
+tbody tr:hover {
+    background-color: #1a2a3a;
+    color: #ffeb3b;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    td {
+        padding: 10px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #1f3b50;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #7da6d9;
+    }
+}

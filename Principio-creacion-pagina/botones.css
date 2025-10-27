@@ -1,0 +1,140 @@
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+button {
+    padding: 20px 40px;
+    font-size: 20px;
+    border: none;
+    
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.boton_uno {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 15px;
+}
+
+.boton_dos {
+    background-color: #1dd1a1;
+    color: #000;
+    border-radius: 65px;
+}
+
+.boton_tres {
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 120px;
+}
+
+.boton_cuatro {
+    background-color: #feca57;
+    color: #000;
+    border-radius: 5px;
+}
+
+.boton_cinco {
+    background-color: #9b59b6;
+    color: white;
+    border-radius: 70px;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 720px) {
+    .contenedor-botones {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+    .boton_uno {
+    background-color: #3c3fd8cb;
+    color: white;
+    border-radius: 20px;
+}
+
+.boton_dos {
+    background-color: #e3dd1e;
+    color: #000;
+    border-radius: 500px;
+}
+
+.boton_tres {
+    background-color: #d921ab;
+    color: white;
+    border-radius: 15px;
+}
+
+.boton_cuatro {
+    background-color: #3d4d9a;
+    color: #000;
+    border-radius: 150px;
+}
+
+.boton_cinco {
+    background-color: #c88014;
+    color: white;
+    border-radius: 3px;
+}
+}
+@media only screen and (max-width: 450px){
+        button {
+        width: 80%;
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+    .boton_uno {
+    background-color: #3c3fd8cb;
+    color: white;
+    border-radius: 200px;
+}
+
+.boton_dos {
+    background-color: #e3dd1e;
+    color: #000;
+    border-radius: 5px;
+}
+
+.boton_tres {
+    background-color: #d921ab;
+    color: white;
+    border-radius: 1500px;
+}
+
+.boton_cuatro {
+    background-color: #3d4d9a;
+    color: #000;
+    border-radius: 1px;
+}
+
+.boton_cinco {
+    background-color: #c88014;
+    color: white;
+    border-radius: 300px;
+
+}

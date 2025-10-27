@@ -1,0 +1,210 @@
+
+
+
+
+body {
+  background-color: #121212; /* Fondo oscuro */
+  color: #f1f1f1; /* Texto claro */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* === ENCABEZADO === */
+header {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ff6600;
+  display: flex;
+
+}
+.header_tt{
+  display: flex;
+  align-items: center;       /* centra verticalmente */
+  justify-content: space-between;  /* espacio entre h1 y form */
+  padding: 0 20px;           /* coloca los elementos en línea */
+}
+
+.logo_header{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+ 
+
+
+
+/* === NAVEGACIÓN === */
+
+nav { 
+     flex: 1;                  /* ocupa el espacio entre h1 y form */
+  display: flex;
+  justify-content: center;  /* centra la lista */
+  align-items: center;
+
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff6600; /* Naranja */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffa64d;
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* === BARRA DE BÚSQUEDA === */
+section form {
+  text-align: center;
+  margin: 20px 0;
+}
+.formulario-nav  {
+  display: flex;
+  gap: 10px;
+}
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #ffcc00; /* Amarillo */
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #121212;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffdb4d;
+}
+
+/* === SECCIÓN DE PRODUCTOS === */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+/* Productos en filas horizontales */
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.producto-categoria{
+ display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px; /* espacio entre productos */
+  padding: 20px;}
+
+article {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+   
+.Balones{
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /*Centra la imagen*/
+   }
+article:hover {
+  transform: scale(1.03);
+  border-color: #ff6600;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Botones de productos */
+article button {
+  background-color: #ffcc00; /* Amarillo */
+  color: #121212;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;/*Cambia el mouse a una mano pasandolo por encima*/
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+article button:hover {
+  background-color: #ffdb4d;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid #ff6600;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffa64d;
+}
+
+@media (max-width: 720px) {
+  .articulos {
+    flex-direction: column;
+  }
+}
+
+
+
