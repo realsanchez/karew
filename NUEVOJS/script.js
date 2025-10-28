@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailverde = document.getElementById('verde');
   const emailrojo = document.getElementById('rojo');
   const emailamarillo = document.getElementById('amarillo');
+  let dubai=document.getElementById('dubai');
 
   // ✅ Función para resetear los botones (fuera de los listeners)
   function resetBotones() {
@@ -64,6 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
     emailamarillo.style.width = '100px';
     emailamarillo.style.height = '40px';
     emailamarillo.value = 'Enviar';
+
+    dubai.src="https://voyagedubai.fr/wp-content/uploads/2018/01/downtown-dubai.jpg";
+    dubai.style.width='300px';
+    dubai.style.height='200px';
   }
 
   // ✅ Listeners de cada botón
@@ -101,5 +106,19 @@ document.addEventListener('DOMContentLoaded', () => {
     emailverde.style.width = "450px";
     emailverde.style.height = "220px";
     emailverde.value = "Enviado";
+    });
+    dubai.addEventListener('mouseenter', ()=>{
+  resetBotones();
+    dubai.src="https://arabmls.org/wp-content/uploads/2024/04/Emaar-1024x685.jpg";
+     dubai.style.width='300px';
+    dubai.style.height='200px';
+    dubai.addEventListener("mouseout", ()=>{
+      dubai.src="https://voyagedubai.fr/wp-content/uploads/2018/01/downtown-dubai.jpg"
+      dubai.style.width='300px';
+      dubai.style.height='200px';
+    });
   });
-});
+  
+
+
+})
