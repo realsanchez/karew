@@ -1,0 +1,119 @@
+/* ======== Estilo inspirado en la Antigua Roma ======== */
+/* Mármol, oro, pergamino y tipografía clásica elegante */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:wght@400;600&display=swap');
+
+/* Fondo general */
+body {
+    background: radial-gradient(circle at top, #f6f0da 0%, #e9dfc0 100%);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Roman_marble_texture.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Crimson Text', serif;
+    color: #3a2b13;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    border-top: 10px solid #bfa25b;
+}
+
+/* Marco decorativo dorado */
+body::before {
+    content: "";
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border: 12px double #bfa25b;
+    border-radius: 10px;
+    pointer-events: none;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Contenedor uno: frases */
+.cont_uno {
+    margin-top: 60px;
+    padding: 20px;
+    background: rgba(255, 248, 230, 0.7);
+    border: 2px solid #bfa25b;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+/* Párrafos individuales (palabras) */
+.cont_uno p {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #6a4c14;
+    transition: all 0.3s ease;
+    border: 1px solid #bfa25b;
+}
+
+.cont_uno p:hover {
+    background: rgba(255, 215, 0, 0.6);
+    color: #4d2f00;
+    transform: scale(1.1);
+}
+
+/* Contenedor dos */
+.cont_dos, .cont_tres {
+    margin-top: 40px;
+}
+
+.cont_dos h2, .cont_tres h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    color: #7a5212;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    background: rgba(255, 248, 230, 0.8);
+    border: 2px solid #bfa25b;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+/* Botones imperiales */
+button {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff8dc;
+    background: linear-gradient(to bottom, #d8b14b 0%, #a27620 100%);
+    border: 2px solid #7a5712;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin: 20px 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #f1d98b 0%, #a6731c 100%);
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+
+button:active {
+    transform: translateY(1px);
+    background: linear-gradient(to bottom, #b78d2a 0%, #825d10 100%);
+}
+
+/* Efecto final */
+h2, p, button {
+    transition: all 0.3s ease;
+}
+
+/* Pequeño detalle final tipo pergamino */
+.cont_uno, .cont_dos, .cont_tres {
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}

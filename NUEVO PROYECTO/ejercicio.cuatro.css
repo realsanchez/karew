@@ -1,0 +1,90 @@
+/* 🌿 Estilo general — "modo verde hoja" */
+body {
+    background: linear-gradient(120deg, #a8e063, #56ab2f);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1b3b10;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+/* 🪴 Estilo de los labels */
+label {
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    margin-top: 15px;
+}
+
+/* 🌾 Inputs verdes */
+input[type="text"] {
+    background-color: #e9f7df;
+    border: 2px solid #56ab2f;
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    font-size: 1em;
+    color: #2b542c;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #d4edc1;
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* 🌼 Botones estilo hoja */
+button {
+    background-color: #56ab2f;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #3b7a20;
+    transform: scale(1.05);
+}
+
+/* 🌳 Resultados */
+h2, h3, p {
+    background-color: #f1f8e9;
+    border: 2px solid #8bc34a;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #2e7d32;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #33691e;
+}
+
+p {
+    font-size: 1.1em;
+    color: #1b5e20;
+}
+
+/* 🍃 Pequeña animación de entrada */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+input, button, h2, h3, p {
+    animation: aparecer 0.8s ease;
+}
